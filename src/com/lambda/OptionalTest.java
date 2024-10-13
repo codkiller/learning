@@ -4,6 +4,10 @@ import org.junit.Test;
 
 import java.util.Optional;
 
+/**
+ * @author Lee
+ * @date 2024/07/27 10:21
+ */
 
 public class OptionalTest {
     /**
@@ -33,7 +37,11 @@ public class OptionalTest {
         return boy.getGirl().getName();
     }
 
-    // 优化之前的判断
+    /**
+     * 进行判断优化
+     * @param boy
+     * @return
+     */
     public String getGirlName1(Boy boy) {
         if (boy != null) {
             Girl girl = boy.getGirl();
@@ -59,4 +67,6 @@ public class OptionalTest {
     public void test3() {
 
     }
+
+
 }
